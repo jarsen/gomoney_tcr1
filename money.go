@@ -7,7 +7,7 @@ func main() {
 }
 
 type Dollar struct {
-	amount uint64
+	Amount uint64
 }
 
 func (d *Dollar) times(multiplier uint64) *Dollar {

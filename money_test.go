@@ -7,6 +7,6 @@ import (
 )
 
 func TestMultiplication(t *testing.T) {
-	five := Dollar{amount: 5}
+	five := Dollar{Amount: 5}
 	assert.NotNil(t, five)
 }
