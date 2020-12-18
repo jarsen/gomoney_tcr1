@@ -19,12 +19,16 @@ type Franc struct {
 	*Money
 }
 
-func NewDollar(amount uint64) *Dollar {
-	return &Dollar{Money: &Money{amount: amount}}
+func NewDollar(amount uint64) *Money {
+	return &Money{amount: amount, currency: "USD"}
 }
 
 func NewFranc(amount uint64) *Franc {
 	return &Franc{Money: &Money{amount: amount}}
+}
+
+func (m *Money) Times(multiplier uint64) *Money {
+	return &Money{amount: m.amount * multiplier, currency: m.currency}
 }
 
 func (d *Dollar) Times(multiplier uint64) *Dollar {
