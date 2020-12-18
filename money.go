@@ -7,7 +7,8 @@ func main() {
 }
 
 type Money struct {
-	amount uint64
+	amount   uint64
+	currency string
 }
 
 type Dollar struct {
