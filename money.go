@@ -11,14 +11,6 @@ type Money struct {
 	currency string
 }
 
-type Dollar struct {
-	*Money
-}
-
-type Franc struct {
-	*Money
-}
-
 func NewDollar(amount uint64) *Money {
 	return &Money{amount: amount, currency: "USD"}
 }
