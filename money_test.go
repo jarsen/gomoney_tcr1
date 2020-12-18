@@ -8,5 +8,5 @@ import (
 
 func TestMultiplication(t *testing.T) {
 	five := Dollar{Amount: 5}
-	assert.NotNil(t, five)
+	assert.EqualValues(t, five.Amount, 5)
 }
