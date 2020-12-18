@@ -25,3 +25,7 @@ func NewFranc(amount uint64) *Franc {
 func (d *Dollar) Times(multiplier uint64) *Dollar {
 	return &Dollar{amount: d.amount * multiplier}
 }
+
+func (d *Franc) Times(multiplier uint64) *Franc {
+	return &Franc{amount: d.amount * multiplier}
+}
