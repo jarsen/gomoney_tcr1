@@ -9,4 +9,5 @@ import (
 func TestMultiplication(t *testing.T) {
 	five := Dollar{Amount: 5}
 	assert.EqualValues(t, five.Times(2).Amount, 10)
+	assert.EqualValues(t, five.Times(3).Amount, 15)
 }
