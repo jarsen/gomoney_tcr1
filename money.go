@@ -10,6 +10,10 @@ type Dollar struct {
 	amount uint64
 }
 
+type Franc struct {
+	amount uint64
+}
+
 func NewDollar(amount uint64) *Dollar {
 	return &Dollar{amount: amount}
 }
