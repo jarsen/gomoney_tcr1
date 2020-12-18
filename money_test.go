@@ -1,7 +1,12 @@
 package main
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/stretchr/testify/assert"
+)
 
 func TestMultiplication(t *testing.T) {
-	_ = Dollar{amount: 5}
+	five := Dollar{amount: 5}
+	assert.NotNil(t, five)
 }
