@@ -6,4 +6,6 @@ func main() {
 	fmt.Println("vim-go")
 }
 
-type Dollar struct{}
+type Dollar struct {
+	amount uint64
+}
