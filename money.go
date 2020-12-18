@@ -7,13 +7,13 @@ func main() {
 }
 
 type Dollar struct {
-	Amount uint64
+	amount uint64
 }
 
 func NewDollar(amount uint64) *Dollar {
-	return &Dollar{Amount: amount}
+	return &Dollar{amount: amount}
 }
 
 func (d *Dollar) Times(multiplier uint64) *Dollar {
-	return &Dollar{Amount: d.Amount * multiplier}
+	return &Dollar{amount: d.amount * multiplier}
 }
