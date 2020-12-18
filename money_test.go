@@ -13,4 +13,5 @@ func TestDollarMultiplication(t *testing.T) {
 }
 
 func TestFrancMultiplication(t *testing.T) {
+	_ = NewFranc(5)
 }
