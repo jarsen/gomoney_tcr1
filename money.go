@@ -10,6 +10,6 @@ type Dollar struct {
 	Amount uint64
 }
 
-func (d *Dollar) times(multiplier uint64) *Dollar {
-	return d
+func (d *Dollar) Times(multiplier uint64) *Dollar {
+	return &Dollar{Amount: d.Amount * multiplier}
 }
