@@ -6,12 +6,9 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestDollarMultiplication(t *testing.T) {
+func TestMultiplication(t *testing.T) {
 	assert.Equal(t, NewDollar(5).Times(2), NewDollar(10))
 	assert.Equal(t, NewDollar(5).Times(3), NewDollar(15))
-}
-
-func TestFrancMultiplication(t *testing.T) {
 	assert.Equal(t, NewFranc(5).Times(2), NewFranc(10))
 	assert.Equal(t, NewFranc(5).Times(3), NewFranc(15))
 }
