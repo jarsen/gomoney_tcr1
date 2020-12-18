@@ -13,6 +13,10 @@ func TestMultiplication(t *testing.T) {
 	assert.Equal(t, NewFranc(5).Times(3), NewFranc(15))
 }
 
+func TestAddition(t *testing.T) {
+	assert.Equal(t, NewDollar(5).Plus(NewDollar(5)), NewDollar(10))
+}
+
 func TestEquality(t *testing.T) {
 	assert.Equal(t, NewDollar(5), NewDollar(5))
 	assert.NotEqual(t, NewDollar(5), NewDollar(6))
